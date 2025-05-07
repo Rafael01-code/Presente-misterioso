@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #cc2e5d;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    button {
+      margin: 10px 5px;
+      padding: 15px 25px;
+      font-size: 18px;
+      background-color: #ff4f81;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      cursor: pointer;
+      width: 80%;
+      max-width: 250px;
+      font-family: 'Merriweather', serif;
+    }
+
+    button:hover {
+      background-color: #ff3366;
+    }
+
+    #final-message {
+      background-size: cover;
+      background-position: center;
+      padding: 30px 15px;
+      color: white;
+      min-height: 100vh;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #final-message h2 {
+      font-size: 28px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    #final-message p {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.5rem;
+    }
+
+    h2, p {
+      margin: 15px 0;
+    }
+
+    @media (min-width: 600px) {
+      button {
+        font-size: 20px;
+      }
+
+      #final-message p {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="step1">
+    <img src="JEANNY.jpg" alt="Foto da princesa" style="max-width: 200px; width: 100%; margin-top: 10px; border-radius: 10px;">
+    <h2>Você e essa Princesa Maravilhosa ?? Pq eu to muito apaixonado por ela e tambem to querendo ela demais. :</h2>
+    <button onclick="responder('sim')">Sim</button>
+    <button onclick="responder('nao')">Não</button>
+  </div>
+
+  <div class="container hidden" id="resposta-nao">
+    <p>Então pode sumir sua bixa feia eu já tenho dona e se eu falar pra ela que vc tá dando encima de mim ela te quebra fica esperta!!!</p>
+    <img src="Bravo.jpg" alt="Rejeitada" style="max-width: 200px; width: 100%; margin-top: 10px; border-radius: 10px;">
+  </div>  
+
+  <div class="container hidden" id="resposta-sim">
+    <p style="font-size: 1.4rem;">Você aceita esse presente que o seu amor que preparou com todo carinho e todo amor do mundo??</p>
+    <img src="presente.jpg" alt="Presente do amor" style="display: block; margin: 20px auto 0; max-width: 150px; width: 100%; border-radius: 10px;">
+    <button onclick="mostrarPresente()">Aceitar</button>
+  </div>
+
+  <div class="container hidden" id="presente">
+    <p style="font-size: 1.4rem;">Parabéns!!! Você acabou de ganhar uma carta de amor do cara mais apaixonado por você. ❤️</p>
+    <img src="Cartinha de amor.jpg" alt="Presente do amor" style="display: block; margin: 20px auto 0; max-width: 150px; width: 100%; border-radius: 10px;">
+    <button onclick="mostrarCarta()">Ler a Carta</button>
+  </div>
+
+  <!-- ...todo o restante permanece igual... -->
+
+<div class="container" id="final-message" style="background-image: url('IMAGEM-DA-CARTA-ABERTA.jpg');">
+  <h2>Oii Oii meu amor!!! Fiz essa cartinha com todo carinho e paixão. Espero que goste. 💖</h2>
+  <p>
+    Desde o primeiro dia em que começamos a conversar, meu coração já sentia que era você. Só de ler um “Bom dia” ou um “Boa noite” seu, meu dia se transforma. Cada momento falando com você é um presente que eu guardo com carinho.<br><br>
+    Eu não sei se esse é o momento certo para abrir meu coração, mas depois de pensar bastante, percebi que o melhor é ser sincero:<br><strong>EU TE AMO, JEANNY</strong>.<br>
+    E não estou dizendo isso da boca pra fora é algo que sinto de verdade, lá no fundo do meu coração.<br><br>
+    Eu sei que você passou por uma decepção amorosa. Também sei que talvez agora você esteja se reencontrando, se reconstruindo. Mas quero que saiba: estou aqui, por inteiro. Quero te ver feliz, sorrindo, leve — e, se você deixar, quero fazer parte dessa caminhada.<br><br>
+    Você me disse que gosta de mim, talvez não da mesma forma intensa com que eu gosto de você. E tudo bem. Eu acredito que você gosta sim — do seu jeito, no seu tempo. E é isso que torna tudo tão especial entre nós.<br><br>
+    Essa carta não é exatamente um pedido de namoro, porque ainda não nos vimos pessoalmente. Mas é um convite para tentarmos algo juntos, com calma, com carinho, com verdade.<br><br>
+    Jeanny, quero ser alguém com quem você possa contar. Quero que se sinta à vontade pra conversar, se abrir, pedir apoio. Você já demonstrou carinho por mim, e eu sinto isso em cada gesto seu.<br><br>
+    Às vezes fico pensando em você e torcendo, do fundo do coração, pra que seu dia esteja sendo calmo, leve, cheio de coisinhas boas.<br><br>
+    Não precisa me dizer nada se não quiser, mas quero que você saiba que estou aqui por você amor de verdade, com o coração aberto, esperando com carinho o seu tempo.<br><br>
+    Não tô aqui pra cobrar, forçar ou acelerar nada. Só quero ser aquele cara com quem você se sinta segura tipo seu cantinho de paz, onde possa descansar, ser você mesma, com toda essa luz, esse jeitinho único e lindo que me encanta tanto... Sem medo, sem pressa, sem julgamentos. Com todo o carinho do mundo, só pra você.<br><br>
+    Pode contar comigo sempre que quiser amor. Mesmo nos dias de silêncio, meu amor por você não muda.  <br><br>
+    Eu tô aqui de braços abertos, com todo o cuidado do mundo, só querendo ver você bem.<br><br>
+    E, mais do que tudo, queria te perguntar com todo carinho do mundo:<br><strong>Como você está?</strong><br><br>
+    <strong>EU TE AMO DEMAIS, JEANNY</strong> 💖
+  </p>
+</div>
+
+
+  <script>
+    function responder(opcao) {
+      document.getElementById('step1').classList.add('hidden');
+      if (opcao === 'sim') {
+        document.getElementById('resposta-sim').classList.remove('hidden');
+      } else {
+        document.getElementById('resposta-nao').classList.remove('hidden');
+      }
+    }
+
+    function mostrarPresente() {
+      document.getElementById('resposta-sim').classList.add('hidden');
+      document.getElementById('presente').classList.remove('hidden');
+    }
+
+    function mostrarCarta() {
+      document.getElementById('presente').classList.add('hidden');
+      document.getElementById('final-message').style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
